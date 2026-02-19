@@ -21,7 +21,7 @@ const getCorrectSrc = (fileName, category) => {
 	return `/images/projects/${catPath}/${fileName}`;
 };
 
-const Portfolio = ({ className }) => {
+const PortfolioContent = ({ className }) => {
 	const searchParams = useSearchParams();
 	const filterParam = searchParams.get("filter");
 
@@ -109,6 +109,13 @@ const Portfolio = ({ className }) => {
 	);
 };
 
+const Portfolio = (props) =>{
+	return (
+        <React.Suspense fallback={<div className="text-center p-5">Carregando Projetos...</div>}>
+            <PortfolioContent {...props} />
+        </React.Suspense>
+    );
+}
 export default Portfolio;
 
 const Card = ({ category, title, src, animationClass, id }) => {
