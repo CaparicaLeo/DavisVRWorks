@@ -12,7 +12,7 @@ const Summery = () => {
 						<SlideUp>
 							<div className="about-image-part">
 								<img
-									src={"/images/about/profile.png"}
+									src={"/images/about/sobre_mim.png"}
 									alt="About Me"
 								/>
 							</div>

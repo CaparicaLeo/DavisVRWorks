@@ -15,7 +15,7 @@ const Resume = () => {
                                 <div className="experience-list">
                                     <Card year={'2025 - Present'} title={'Ilustrador / Designer de Jogos'} institution={'PDM - Porrada Deusas e Monstros'} />
                                     <Card year={'2022 - 2025'} title={'Diretor de Arte Sênior'} institution={'Huginn Studio'} />
-                                    <Card year={'2022 - 2025'} title={'Instrutor de Games / Ilustração'} institution={'Grupo UNINTER'} />
+                                    <Card year={'2022 - 2025'} title={'Instrutor de Games / Ilustração'} institution={'Grupo UNINTER / GAMESCOLA'} />
                                 </div>
                             </div>
                         </div>

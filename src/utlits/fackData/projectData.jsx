@@ -108,7 +108,7 @@ export const projectsData = [
 		client: "Gamescola",
 		year: "2024",
 		description:
-			"Projeto desenvolvido para fins educacionais na GAMESCOLA, no qual atuei no design e ilustração do personagem, aplicado a um treinamento em processos de animação para games. O famoso personagem do Nerdcast Cyberpunk e do jogo Cyberpunk 2077 serviu como referência conceitual para o estudo. A personagem foi construída com a técnica de cut-out e configurada no DragonBones, estando preparada para implementação em uma plataforma game 2.5D no Unity, com estrutura compatível com programação em JSON, seguindo um pipeline profissional de produção.",
+			"Projeto desenvolvido para fins educacionais na UNINTER, no qual atuei no design e ilustração do personagem, aplicado a um treinamento em processos de animação para games. O famoso personagem do Nerdcast Cyberpunk e do jogo Cyberpunk 2077 serviu como referência conceitual para o estudo. A personagem foi construída com a técnica de cut-out e configurada no DragonBones, estando preparada para implementação em uma plataforma game 2.5D no Unity, com estrutura compatível com programação em JSON, seguindo um pipeline profissional de produção.",
 		gallery: [
 			"https://www.youtube.com/embed/3fkdVgCAN9U",
 			"gamescola_ozob_1500x1610_01.png",
@@ -121,11 +121,11 @@ export const projectsData = [
 		id: 9,
 		src: "PERTO_BILINGUE_REINASSANCE_1920x1249.png",
 		category: "Illustrations",
-		title: "Renascesse",
+		title: "Renaissance",
 		client: "Perto Bilíngue",
 		year: "2021",
 		description:
-			"Projetos desenvolvidos para a Perto Bilíngue, sob o selo PERTO LAB, nos quais atuei como Diretor de Arte em diversas frentes criativas. Neste projeto específico, também fui responsável pela ilustração e pelo design, contribuindo de forma integral para a construção visual do material. Renascesse é um material didático ilustrado e interativo, voltado ao público do ensino médio, criado para dar suporte a uma metodologia própria de ensino de idiomas, unindo linguagem visual, engajamento e clareza pedagógica.",
+			"Projetos desenvolvidos para a Perto Bilíngue, sob o selo PERTO LAB, nos quais atuei como Diretor de Arte em diversas frentes criativas. Neste projeto específico, também fui responsável pela ilustração e pelo design, contribuindo de forma integral para a construção visual do material. Renaissance é um material didático ilustrado e interativo, voltado ao público do ensino médio, criado para dar suporte a uma metodologia própria de ensino de idiomas, unindo linguagem visual, engajamento e clareza pedagógica.",
 		gallery: [
 			"PERTO_BILINGUE_REINASSANCE_1500x1610_01.png",
 			"PERTO_BILINGUE_REINASSANCE_1500x1610_02.png",
@@ -243,6 +243,7 @@ export const projectsData = [
 			"JUJUTSU_KAISEN_1500x1610_02.png",
 			"JUJUTSU_KAISEN_1500x1610_03.png",
 			"JUJUTSU_KAISEN_1500x1610_04.png",
+			"JUJUTSU_KAISEN_1920x300_barra.png"
 		],
 	},
 	{

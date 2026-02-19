@@ -3062,3 +3062,14 @@ ul.blog_pagination li a:hover {
     padding: 25px;
     border: 1px solid var(--border-color);
 }
+/* Estilo para destacar os links no hover */
+.contact-link:hover {
+    color: #25D366 !important; /* Cor do WhatsApp ou a cor de destaque do seu tema */
+    transform: translateX(5px); /* Dá um leve "pulo" para a direita */
+    text-shadow: 0px 0px 8px rgba(37, 211, 102, 0.3); /* Um brilho suave */
+}
+
+/* Se quiser uma cor diferente para o e-mail no hover */
+a[href^="mailto"]:hover {
+    color: #f8931f !important; /* Exemplo: Cor de destaque do portfólio */
+}

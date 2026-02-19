@@ -11,13 +11,18 @@ const ProjectContent = () => {
     const displayProject = project || projectsData[0];
 
     const getCorrectSrc = (fileName, category) => {
-        if (!fileName) return "/images/projects/single-project.jpg"; // Fallback
+        if (!fileName) return "/images/projects/single-project.jpg";
         if (fileName.startsWith('http') || fileName.startsWith('/')) return fileName;
         const catPath = category ? category.toLowerCase() : "others";
         return `/images/projects/${catPath}/${fileName}`;
     };
 
     const isYouTube = (url) => url.includes("youtube.com") || url.includes("youtu.be");
+
+    const isPanorama = (fileName) => {
+        if (typeof fileName !== 'string') return false;
+        return fileName.toLowerCase().includes('barra') || fileName.toLowerCase().includes('panorama');
+    };
 
     return (
         <div className="single-project-page-design">
@@ -36,7 +41,6 @@ const ProjectContent = () => {
                     height={1072} 
                     sizes='100vw' 
                     style={{width:"100%", height:"auto"}} 
-                    // Aplica a correção aqui
                     src={getCorrectSrc(displayProject.src, displayProject.category)} 
                     alt={displayProject.title} 
                     priority
@@ -72,34 +76,45 @@ const ProjectContent = () => {
 
                 <div className="row pt-30">
                     {displayProject.gallery && displayProject.gallery.length > 0 ? (
-                        displayProject.gallery.map((item, index) => (
-                            <div className="col-lg-6 mb-30" key={index}>
-                                <div className={`single-image wow fadeInUp delay-0-${(index + 1) * 2}s`}>
-                                    
-                                    {isYouTube(item) ? (
-                                        <div className="video-container" style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
-                                            <iframe
-                                                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", borderRadius: "10px" }}
-                                                src={item}
-                                                title="YouTube video player"
-                                                frameBorder="0"
-                                                allowFullScreen
-                                            ></iframe>
-                                        </div>
-                                    ) : (
-                                        <Image 
-                                            width={633} 
-                                            height={679} 
-                                            sizes='100%' 
-                                            style={{width:"100%", height:"auto", borderRadius: "10px"}} 
-                                            src={getCorrectSrc(item, displayProject.category)} 
-                                            alt={`gallery-${index}`} 
-                                        />
-                                    )}
-                                    
+                        displayProject.gallery.map((item, index) => {
+                            const panorama = isPanorama(item);
+                            const youtube = isYouTube(item);
+                            
+                            // Define se o item deve ocupar a linha inteira (Ideia 3)
+                            const isFullWidth = panorama || youtube;
+
+                            return (
+                                <div 
+                                    className={`${isFullWidth ? 'col-lg-12' : 'col-lg-6'} mb-30`} 
+                                    key={index}
+                                >
+                                    <div className={`single-image wow fadeInUp delay-0-${(index + 1) * 2}s`}>
+                                        {youtube ? (
+                                            /* Vídeo ocupando largura total para evitar lacunas */
+                                            <div className="video-container" style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "10px", backgroundColor: "#000" }}>
+                                                <iframe
+                                                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                                                    src={item}
+                                                    title="YouTube video player"
+                                                    frameBorder="0"
+                                                    allowFullScreen
+                                                ></iframe>
+                                            </div>
+                                        ) : (
+                                            /* Imagem: Se for panorama/barra usa 1920px, se não usa o padrão */
+                                            <Image 
+                                                width={isFullWidth ? 1920 : 633} 
+                                                height={isFullWidth ? 600 : 679} 
+                                                sizes='100%' 
+                                                style={{width:"100%", height:"auto", borderRadius: "10px"}} 
+                                                src={getCorrectSrc(item, displayProject.category)} 
+                                                alt={`gallery-${index}`} 
+                                            />
+                                        )}
+                                    </div>
                                 </div>
-                            </div>
-                        ))
+                            );
+                        })
                     ) : (
                         <div className="col-lg-12 text-center">
                             <p className="pt-20">Conteúdo adicional em breve.</p>
@@ -111,7 +126,6 @@ const ProjectContent = () => {
     );
 };
 
-// Componente principal com Suspense
 const SingleProject = () => {
     return (
         <Suspense fallback={<div>Loading...</div>}>
