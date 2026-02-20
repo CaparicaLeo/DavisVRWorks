@@ -11,10 +11,9 @@ const ContactForm = () => {
 		setResult("Enviando....");
 
 		const formData = new FormData(event.target);
-		const object = Object.fromEntries(formData); // Converte para objeto JSON
+		const object = Object.fromEntries(formData); 
 
 		const response = await fetch("/api/contact", {
-			// Chama sua rota interna
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(object),

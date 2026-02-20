@@ -101,7 +101,6 @@ const ProjectContent = () => {
                                                 ></iframe>
                                             </div>
                                         ) : (
-                                            /* Imagem: Se for panorama/barra usa 1920px, se não usa o padrão */
                                             <Image 
                                                 width={isFullWidth ? 1920 : 633} 
                                                 height={isFullWidth ? 600 : 679} 

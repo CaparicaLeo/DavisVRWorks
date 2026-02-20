@@ -81,6 +81,12 @@ export const projectsData = [
 			"PORRADA_DEUSAS_E_MONSTROS_1500x1610_02.png",
 			"PORRADA_DEUSAS_E_MONSTROS_1500x1610_03.png",
 			"PORRADA_DEUSAS_E_MONSTROS_1500x1610_04.png",
+			"PORRADA_DEUSAS_E_MONSTROS_barra_pdm_01.jpg",
+			"PORRADA_DEUSAS_E_MONSTROS_barra_pdm_02.jpg",
+			"PORRADA_DEUSAS_E_MONSTROS_barra_pdm_03.jpg",
+			"PORRADA_DEUSAS_E_MONSTROS_barra_pdm_04.jpg",
+			"PORRADA_DEUSAS_E_MONSTROS_barra_pdm_05.jpg",
+			"PORRADA_DEUSAS_E_MONSTROS_barra_pdm_06.jpg",
 		],
 	},
 	{
@@ -115,6 +121,21 @@ export const projectsData = [
 			"gamescola_ozob_1500x1610_02.png",
 			"gamescola_ozob_1500x1610_03.png",
 			"gamescola_ozob_1500x1610_04.png",
+		],
+	},
+	{
+		id: 8,
+		src: "ILUSTRAÇÂO_HEMAN_home1920x1249.png",
+		category: "Illustrations",
+		title: "HE-MAN",
+		client: "Particular",
+		year: "2026",
+		description:"Projeto de ilustração autoral desenvolvido como estudo de linguagem, explorando uma abordagem mais crua e texturizada dentro do meu próprio estilo. Trabalhei com pinceladas mais brutas e marcadas, reduzindo o polimento excessivo para valorizar gesto, energia e impacto visual, mantendo um outline forte como estrutura. A peça é uma releitura inspirada no universo de He-Man, reinterpretado sob uma ótica mais madura e autoral. Todo o visual foi construído do zero, com foco em presença, dramaticidade e narrativa, demonstrando como tensionar a própria essência artística pode elevar personalidade e força estética no resultado final.F",
+		gallery:[
+			"ILUSTRAÇÂO_HEMAN_IMG 1 - 1500x1610.png",
+			"ILUSTRAÇÂO_HEMAN_IMG 2 - 1500x1610.png",
+			"ILUSTRAÇÂO_HEMAN_IMG 3 - 1500x1610.png",
+			"ILUSTRAÇÂO_HEMAN_IMG 4 - 1500x1610.png",
 		],
 	},
 	{
@@ -260,6 +281,7 @@ export const projectsData = [
 			"SENAI_MEGAMAN_1500x1610_02.png",
 			"SENAI_MEGAMAN_1500x1610_03.png",
 			"SENAI_MEGAMAN_1500x1610_04.png",
+			"SENAI_MEGAMAN_barra.png"
 		],
 	},
 	{
@@ -276,6 +298,7 @@ export const projectsData = [
 			"MARATONA_COM_CAFE_NERD_1500x1610_02.png",
 			"MARATONA_COM_CAFE_NERD_1500x1610_03.png",
 			"MARATONA_COM_CAFE_NERD_1500x1610_04.png",
+			"MARATONA_COM_CAFE_NERD_barra.png"
 		],
 	},
 	{
@@ -292,6 +315,7 @@ export const projectsData = [
 			"MARATONA_COM_CAFE_GAME_1500x1610_02.png",
 			"MARATONA_COM_CAFE_GAME_1500x1610_03.png",
 			"MARATONA_COM_CAFE_GAME_1500x1610_04.png",
+			"MARATONA_COM_CAFE_GAME_barra.png",
 		],
 	},
 	{
@@ -308,6 +332,7 @@ export const projectsData = [
 			"MARATONA_COM_CAFE_CINEMA_1500x1610_02.png",
 			"MARATONA_COM_CAFE_CINEMA_1500x1610_03.png",
 			"MARATONA_COM_CAFE_CINEMA_1500x1610_04.png",
+			"MARATONA_COM_CAFE_CINEMA_barra.png",
 		],
 	},
 	{
@@ -436,6 +461,7 @@ export const projectsData = [
 			"ANDRESSA_AMAZON_1500x1610_02.png",
 			"ANDRESSA_AMAZON_1500x1610_03.png",
 			"ANDRESSA_AMAZON_1500x1610_04.png",
+			"ANDRESSA_AMAZON_barra.png"
 		],
 	},
 	{
